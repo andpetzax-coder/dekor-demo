@@ -303,10 +303,10 @@
   }
 
   /* ---- демо-плашка для заказчика ------------------------------------------------- */
-  .demo-for { position: fixed; left: var(--v-3); bottom: calc(var(--v-3) + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; align-items: center; gap: .6rem;
-    max-width: min(92vw, 350px); padding: .45rem .95rem .45rem .45rem; border-radius: 999px; background: color-mix(in srgb, var(--v-surface) 88%, transparent);
-    box-shadow: var(--v-e1); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); font-size: var(--v-t-xs); line-height: 1.3; color: var(--v-ink); }
-  .demo-for img { width: 2.2rem; height: 2.2rem; border-radius: 50%; object-fit: cover; flex: none; }
+  .demo-for { position: fixed; left: var(--v-3); bottom: calc(var(--v-3) + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; align-items: center; gap: .8rem;
+    max-width: min(94vw, 470px); padding: .7rem 1.15rem .7rem .7rem; border-radius: 999px; background: color-mix(in srgb, var(--v-surface) 90%, transparent);
+    box-shadow: var(--v-e2), 0 0 0 1px color-mix(in srgb, var(--v-accent) 40%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); font-size: var(--v-t-base); line-height: 1.35; color: var(--v-ink); }
+  .demo-for img { width: 3.2rem; height: 3.2rem; border-radius: 50%; object-fit: cover; flex: none; box-shadow: 0 0 0 2px var(--v-accent); }
   .demo-for b { font-weight: 600; }
 
   /* ---- финал: одно сообщение ----------------------------------------------------- */
@@ -330,7 +330,7 @@
   /* телефон: текст не мельче 15 px (--v-t-sm на 390 px = 14 px); блок в конце, чтобы не перебивался правилами компонентов */
   @media (max-width: 860px) {
     .hero__tel, .poka__rows p, .sb__rep p, .sb__hint, .price__rows p, .price__terms li, .kc__rep p, .ev__facts span, .ev__hint, .ev__fig figcaption,
-    .gal__item figcaption, .faq__a, .faq__more, .close__hint, .close__meta, .foot, .hero__card figcaption, .close__form label, .demo-for { font-size: .95rem; }
+    .gal__item figcaption, .faq__a, .faq__more, .close__hint, .close__meta, .foot, .hero__card figcaption, .close__form label { font-size: .95rem; }
     .bar .v-btn { font-size: .95rem; }
     .v-label, .sb__step, .close__meta b, .price__rows .sum small { font-size: .95rem; }
   }
